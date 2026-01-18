@@ -10,7 +10,7 @@
       line-height: 1.8;
       padding: 1.6em;
       margin: 0;
-      background: #fef9f2;
+      background: linear-gradient(160deg, #faf4ec, #e6c9c2);
       color: #4b2e05;
       text-align: center;
     }
@@ -18,14 +18,16 @@
     .container {
       max-width: 640px;
       margin: 0 auto;
-      background: #ffffff;
+      background: linear-gradient(to bottom, #ffffff, #fcf5eb);
       padding: 1.6em;
-      border-radius: 14px;
-      box-shadow: 0 4px 12px rgba(120, 70, 20, 0.15);
+      border-radius: 18px;
+      border: 1px solid #c8a3a9;
+      box-shadow: 0 10px 24px rgba(80, 20, 30, 0.26);
     }
 
     h1 {
-      color: #b3541e;
+      font-family: "Hiragino Mincho ProN", serif;
+      color: #7a1f2f;
       font-size: 1.7em;
       margin-bottom: 0.8em;
     }
@@ -36,11 +38,12 @@
     }
 
     .coupon {
-      background: #fff6e8;
+      background: linear-gradient(to bottom right, #fff4f5, #f2d6da);
       padding: 1.4em;
       border-radius: 12px;
       margin-top: 1.4em;
-      border: 1px solid #f2d6a2;
+      border: 1px solid #c38b95;
+      box-shadow: inset 0 0 8px rgba(120, 30, 50, 0.12);
     }
 
     .coupon h2 {
@@ -63,11 +66,16 @@
     a {
       display: inline-block;
       margin-top: 1.6em;
-      color: #5a3a1a;
+      color: #7a1f2f;
       text-decoration: none;
       font-weight: bold;
-      border-bottom: 2px solid #d8a15b;
+      border-bottom: 2px solid #b85c6b;
       padding-bottom: 0.1em;
+    }
+
+    a:hover {
+      color: #9e2d41;
+      border-color: #9e2d41;
     }
 
     @media (max-width: 600px) {
