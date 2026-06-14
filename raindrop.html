@@ -10,74 +10,64 @@
       line-height: 1.8;
       padding: 1.6em;
       margin: 0;
-      background: linear-gradient(160deg, #faf4ec, #e6c9c2);
-      color: #4b2e05;
+      background: linear-gradient(160deg, #eef2f5, #c9d6e3);
+      color: #2f3e4d;
       text-align: center;
     }
-
     .container {
       max-width: 640px;
       margin: 0 auto;
-      background: linear-gradient(to bottom, #ffffff, #fcf5eb);
+      background: linear-gradient(to bottom, #ffffff, #f3f6f9);
       padding: 1.6em;
       border-radius: 18px;
-      border: 1px solid #c8a3a9;
-      box-shadow: 0 10px 24px rgba(80, 20, 30, 0.26);
+      border: 1px solid #a9bdd1;
+      box-shadow: 0 10px 24px rgba(40, 60, 90, 0.22);
     }
-
     h1 {
       font-family: "Hiragino Mincho ProN", serif;
-      color: #7a1f2f;
+      color: #3d5a80;
       font-size: 1.7em;
       margin-bottom: 0.8em;
     }
-
     p {
       font-size: 1.05em;
       margin: 0.6em 0;
     }
-
     .coupon {
-      background: linear-gradient(to bottom right, #fff4f5, #f2d6da);
+      background: linear-gradient(to bottom right, #eef3fb, #d6e2ee);
       padding: 1.4em;
       border-radius: 12px;
       margin-top: 1.4em;
-      border: 1px solid #c38b95;
-      box-shadow: inset 0 0 8px rgba(120, 30, 50, 0.12);
+      border: 1px solid #9fb6cc;
+      box-shadow: inset 0 0 8px rgba(60, 90, 130, 0.12);
     }
-
     .coupon h2 {
       font-size: 1.3em;
-      color: #8b4513;
+      color: #5b7c99;
       margin-bottom: 0.6em;
     }
-
     ul {
       list-style-type: none;
       padding-left: 0;
       text-align: left;
       display: inline-block;
     }
-
     li {
       margin: 0.5em 0;
     }
-
     a {
       display: inline-block;
       margin-top: 1.6em;
-      color: #7a1f2f;
+      color: #3d5a80;
       text-decoration: none;
       font-weight: bold;
-      border-bottom: 2px solid #b85c6b;
+      border-bottom: 2px solid #7a9cc6;
       padding-bottom: 0.1em;
     }
-
     a:hover {
-      color: #9e2d41;
-      border-color: #9e2d41;
+      color: #2c4566;
+      border-color: #2c4566;
     }
-
     @media (max-width: 600px) {
       body {
         padding: 1em;
@@ -92,17 +82,13 @@
   </style>
 </head>
 <body>
-
 <div class="container">
-
   <h1>梅雨のメンバー特典 </h1>
-  <p id="accessTime" style="font-size:0.9em;color:#7a1f2f;"></p>
+  <p id="accessTime" style="font-size:0.9em;color:#3d5a80;"></p>
 　　 <p><strong>このページをご提示の上</strong></p>
     <p><strong>ご登録のお名前をお伝えください。</strong></p>
-
   <p><strong>※スクリーンショット不可</strong></p>
   <p><strong>※メンバーご本人来店時のみ有効</strong></p>
-
   <div class="coupon">
     <h2>🎁 デザート特典のご案内</h2>
     <ul>
@@ -114,9 +100,7 @@
         <strong>ご予約時に特典利用の旨をお伝えください。</strong></li>
     </ul>
   </div>
-
   <p><a href="https://www.lafee.me/">ラ・フェ公式ページ</a></p>
-
 </div>
 <script>
   const now = new Date();
@@ -125,7 +109,6 @@
     now.getDate() + "日 " +
     now.getHours().toString().padStart(2,'0') + ":" +
     now.getMinutes().toString().padStart(2,'0');
-
   document.getElementById("accessTime").textContent =
     "アクセス日時：" + formatted;
 </script>
